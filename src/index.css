@@ -63,3 +63,8 @@ strong {
 .card-title {
   font-weight: bold;
 }
+
+.btn-article {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+}

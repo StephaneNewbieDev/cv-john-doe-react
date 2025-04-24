@@ -10,31 +10,31 @@ const blogArticles = [
   {
     id: 2,
     title: "Vendre ses produits sur le web",
-    image: "/assets/img/blog2.jpg",
+    image: "/croissance.jpg",
     date: "20 août 2022",
   },
   {
     id: 3,
     title: "Se positionner sur Google",
-    image: "/assets/img/blog3.jpg",
+    image: "/google.jpg",
     date: "1 août 2022",
   },
   {
     id: 4,
     title: "Coder en responsive design",
-    image: "/assets/img/blog4.jpg",
+    image: "/screens.jpg",
     date: "31 juillet 2022",
   },
   {
     id: 5,
     title: "Techniques de référencement",
-    image: "/assets/img/blog5.jpg",
+    image: "/seo.jpg",
     date: "30 juillet 2022",
   },
   {
     id: 6,
     title: "Apprendre à coder",
-    image: "/assets/img/blog6.jpg",
+    image: "/technos.png",
     date: "12 juillet 2022",
   },
 ];
@@ -44,7 +44,7 @@ export default function Blog() {
     <>
       {/* BANDEAU VISUEL */}
       <div className="w-100" style={{
-        backgroundImage: "url('/assets/img/banner-blog.jpg')",
+        backgroundImage: "url('/banner.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "200px"
@@ -74,7 +74,7 @@ export default function Blog() {
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{article.title}</h5>
                   <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary mt-auto">Lire la suite</a>
+                  <a href="#" className="btn btn-primary btn-article mt-auto">Lire la suite</a>
                   <small className="text-muted mt-3">Publié le {article.date}</small>
                 </div>
               </div>
