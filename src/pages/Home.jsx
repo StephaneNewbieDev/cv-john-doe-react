@@ -43,7 +43,7 @@ export default function Home() {
         </div>
         <div className="col-md-6">
           <img
-            src="/"
+            src="/john-doe-about.jpg"
             alt="John Doe"
             className="img-fluid rounded mb-4"
           />
