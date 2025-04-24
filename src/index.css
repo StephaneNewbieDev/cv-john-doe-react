@@ -2,7 +2,7 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  background-color: #eee;
+  background-color: #f0f0f0;
   color: #444;
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
 
 h1,
 h2 {
-  color: #1e1e1e;
+  color: #f0e9e9;
 }
 
 strong {

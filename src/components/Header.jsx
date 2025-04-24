@@ -2,11 +2,12 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container">
-        <NavLink className="navbar-brand fw-bold text-uppercase" to="/">
+        <NavLink className="navbar-brand text-uppercase fw-bold" to="/">
           John Doe
         </NavLink>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -21,6 +22,11 @@ export default function Header() {
 
         <div className="collapse navbar-collapse" id="mainNavbar">
           <ul className="navbar-nav ms-auto text-uppercase">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/">
+                Accueil
+              </NavLink>
+            </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/services">
                 Services
@@ -38,12 +44,7 @@ export default function Header() {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact">
-                Contact
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/legal">
-                Mentions légales
+                Me contacter
               </NavLink>
             </li>
           </ul>
