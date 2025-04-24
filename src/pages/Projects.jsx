@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Banner from "../components/Banner";
 
 export default function Projects() {
   useEffect(() => {
@@ -30,6 +31,9 @@ export default function Projects() {
   ];
 
   return (
+
+    <><Banner title="REALISATIONS" image="/banner.jpg" />
+    
     <section className="container py-5">
       <h1 className="text-center">PORTFOLIO</h1>
       <p className="text-center text-muted mb-4">
@@ -52,8 +56,7 @@ export default function Projects() {
               <img
                 src={project.image}
                 className="card-img-top"
-                alt={project.title}
-              />
+                alt={project.title} />
               <div className="card-body text-center">
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text">{project.description}</p>
@@ -68,6 +71,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-    </section>
+    </section></>
   );
 }

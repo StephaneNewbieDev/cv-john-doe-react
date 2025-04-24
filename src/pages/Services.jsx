@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Banner from "../components/Banner";
 
 export default function Services() {
   useEffect(() => {
@@ -27,7 +28,8 @@ export default function Services() {
   ];
 
   return (
-    <section className="container py-5">
+
+    <><Banner title="SERVICES" image="/banner.jpg" /><section className="container py-5">
       <h1 className="text-center mb-4">Mes services</h1>
       <div className="row">
         {services.map((service, index) => (
@@ -40,6 +42,6 @@ export default function Services() {
           </div>
         ))}
       </div>
-    </section>
+    </section></>
   );
 }
