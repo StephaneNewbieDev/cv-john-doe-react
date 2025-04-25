@@ -9,21 +9,21 @@ export default function Projects() {
   const projects = [
     {
       title: "Fresh food",
-      image: "https://picsum.photos/id/1080/400/250", // à remplacer par tes vraies images
+      image: "/fresh-food.jpg", // à remplacer par tes vraies images
       description: "Réalisation d’un site avec commande en ligne.",
       tech: "Site réalisé avec PHP et MySQL",
       link: "#",
     },
     {
       title: "Restaurant Akira",
-      image: "https://picsum.photos/id/292/400/250",
+      image: "/restaurant-japonais.jpg",
       description: "Réalisation d’un site vitrine.",
       tech: "Site réalisé avec WordPress",
       link: "#",
     },
     {
       title: "Espace bien-être",
-      image: "https://picsum.photos/id/1018/400/250",
+      image: "/espace-bien-etre.jpg",
       description: "Site vitrine pour un praticien de bien-être.",
       tech: "Site réalisé en HTML/CSS",
       link: "#",
@@ -31,46 +31,48 @@ export default function Projects() {
   ];
 
   return (
+    <>
+      <Banner title="REALISATIONS" image="/banner.jpg" />
 
-    <><Banner title="REALISATIONS" image="/banner.jpg" />
-    
-    <section className="container py-5">
-      <h1 className="text-center">PORTFOLIO</h1>
-      <p className="text-center text-muted mb-4">
-        Voici quelques-unes de mes réalisations.
-      </p>
-      <div className="text-center">
-        <div
-          style={{
-            width: "60px",
-            height: "3px",
-            backgroundColor: "#0d6efd",
-            margin: "0 auto 30px",
-          }}
-        ></div>
-      </div>
-      <div className="row">
-        {projects.map((project, index) => (
-          <div className="col-md-4 mb-4" key={index}>
-            <div className="card h-100 shadow-sm">
-              <img
-                src={project.image}
-                className="card-img-top"
-                alt={project.title} />
-              <div className="card-body text-center">
-                <h5 className="card-title">{project.title}</h5>
-                <p className="card-text">{project.description}</p>
-                <a href={project.link} className="btn btn-outline-primary">
-                  Voir
-                </a>
-              </div>
-              <div className="card-footer text-center text-muted small">
-                {project.tech}
+      <section className="container py-5">
+        <h1 className="text-center">PORTFOLIO</h1>
+        <p className="text-center text-muted mb-4">
+          Voici quelques-unes de mes réalisations.
+        </p>
+        <div className="text-center">
+          <div
+            style={{
+              width: "60px",
+              height: "3px",
+              backgroundColor: "#0d6efd",
+              margin: "0 auto 30px",
+            }}
+          ></div>
+        </div>
+        <div className="row">
+          {projects.map((project, index) => (
+            <div className="col-md-4 mb-4" key={index}>
+              <div className="card h-100 shadow-sm">
+                <img
+                  src={project.image}
+                  className="card-img-top"
+                  alt={project.title}
+                />
+                <div className="card-body text-center">
+                  <h5 className="card-title">{project.title}</h5>
+                  <p className="card-text">{project.description}</p>
+                  <a href={project.link} className="btn btn-outline-primary">
+                    Voir
+                  </a>
+                </div>
+                <div className="card-footer text-center text-muted small">
+                  {project.tech}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section></>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
