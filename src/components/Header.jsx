@@ -4,10 +4,20 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container">
-        <NavLink className="navbar-brand text-uppercase fw-bold" to="/">
-          John Doe
+        <NavLink
+          className="navbar-brand d-flex align-items-center gap-4"
+          to="/"
+          aria-label="Accueil"
+        >
+          <img
+            src="/apple-touch-icon.png"
+            alt="Logo John Doe"
+            width="40"
+            height="40"
+            className="d-inline-block align-top"
+          />
+          <span className="fw-bold text-white text-uppercase">John Doe</span>
         </NavLink>
-
         <button
           className="navbar-toggler"
           type="button"
